@@ -4,25 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <!-- <link href=""
-    link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    /> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
         <div class="logo">Emileny Leal<span class="est-front">Estudante Front-end</span></div>
-        <div class="links">
-            <label class="menu">
-                <!-- <i class="ri-menu-fill"></i> -->
-            </label>
-            <!-- <input type="checkbox" name="check" id="check"> -->
+        <div class="menu">
             <ul>
+                <li><a href="">Home</a></li>
                 <li><a href="#">Currículo</a></li>
                 <li><a href="#">Projetos</a></li>
-                <li><a href="paginas/contato.html">Contato</a></li>
+                <li><a href="">Contato</a></li>
             </ul>
         </div>
     </header>
@@ -36,11 +28,45 @@
             <h4 class="name-titulo">Um pouco sobre mim </h4>
             <p class="name-paragrafo">um pouco sobre mim</p>
             <div class="butoes">
-                <a href=""><button class="bnt-contato">Contato</button></a>
-                <a href=''><button class="bnt-curriculo">Currículo</button></a>
-                <a href=""><button class="bnt-projeto">Projetos</button></a>
+                <a href=""><button class="bnt-contato"> Entre em contato</button></a>
             </div>
         </div>
+      </div>
+
+      <div class="projetos"> 
+        <h2 class="meus-projetos">Meus <sapn>Projetos.</sapn></h2>
+        <div class="projetos-box">
+            <h3>Qrcode</h3>
+            <p>Página que gera qrcode a partir de uma URL (Uniform Resource Locator).</p>
+        </div>
+        <div class="projetos-box">
+            <h3>Calculadora fisica</h3>
+            <p>Página que gera qrcode a partir de uma URL (Uniform Resource Locator).</p>
+        </div>
+        <div class="projetos-box">
+            <h3>Gerador de finanças</h3>
+            <p>Página que gera qrcode a partir de uma URL (Uniform Resource Locator).</p>
+        </div>
+      </div>
+
+      <div class="contato ">
+        <div> 
+            <h1><span>Contato</span></h1>
+    </div>
+    <form action="https://formsubmit.co/capic.2023118tads0008@aluno.ifpi.edu.br"
+          method="post" 
+          class="form">
+          <label for="name">Nome </label>
+          <input type="text" name="name" id="name" required>
+          <label for="email">Email * </label>
+          <input type="email" name="email" id="email" required>
+          <label for="assunto">Assunto</label>
+          <input type="text" name="assunto" id="assunto">
+          <label for="msm">Mensagem</label>
+          <textarea name="msm" required id="msm"></textarea>
+          <button type="submit" id="bnt-enviar">Enviar</button>
+    
+        </form>
       </div>
     </main>
     <footer>

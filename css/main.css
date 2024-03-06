@@ -7,15 +7,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: #ffe2dc; */
+    background-color: #FBFADA;
 }
-
 header .logo {
     font-size: 2.1rem;
     font-weight: 600;
-    color:#aa6462;
+    color: #436850;
     padding: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
 
 }
 
@@ -23,19 +23,34 @@ header .est-front{
     font-size: 12px;
     padding-left: 10px;
 }
-header .logo:hover{
-    color: #c68e8b;
-    cursor: pointer;
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.header, p, ul{
+    padding-right:  20px;
+    padding-top: 25px;
+}
+header h1 {
+    padding-left: 5px;
+    padding-top: 5px;
 }
 a{
     text-decoration: none;
 }
-
-/* main{
+.menu ul {
     display: flex;
-    flex-direction: flex-end;
-    justify-content: center;
-} */
+}
+.menu li {
+    list-style-type: none;
+    cursor: pointer;
+    border-right: 2px solid #12372A;
+    padding: 0 1rem;
+}
+.menu li:last-child{
+    border: none;
+}
 .principal {
     display: flex;
     justify-content: center;
@@ -49,87 +64,38 @@ div .imagem {
 div .imagem img{
     border-radius: 90%;
     max-width: 300px;
-    border: 5px solid #aa6462;
+    border: 5px solid #ADBC9F;
 }
-div .lateral-imagem{
-    
-}
-
-
 div .name-ola{
     font-size: 6rem;
-    color: #aa6462;
+    color: #436850;
 }
 
 div .name-titulo {
-    color: #c68e8b;
+    color: #436850;
     margin-top: 1rem;
 }
 div .name-paragrafo{
     line-height: 1.5rem;
     color: var(--text-light);
     margin-bottom: 2.5rem;
-}
 
-div .butoes{
-    display: flex;
-    gap: 2rem;
 }
-
-.butoes button{
+.bnt-contato{
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 1rem 2rem ;
     outline: none;
-    border: 2px solid #c68e8b;
-    border-radius: 10px;
+    border: 2px solid #12372A;
+    border-radius: 30px;
     cursor: pointer;
-    color: #B2A59B;
+    color: #FBFADA;
+    background-color: #12372A;
     
 }
-
-.bnt-contato{
-    background-color: #aa6462;
-}
 .bnt-contato:hover{
-    background-color: #ffe2dc;
-}
-
-.bnt-projeto:hover{
-    background-color: #aa6462;
-}
-.bnt-curriculo:hover{
-    background-color: #aa6462;
-}
-
-.links{
-    /* margin-left:px; */
-}
-header{
-    color: #aa6462;
-    display: flex;
-    justify-content: space-between;
-}
-.header, p, ul{
-    padding-right:  20px;
-    padding-top: 25px;
-}
-header h1 {
-    padding-left: 5px;
-    padding-top: 5px;
-}
-.links ul {
-    display: flex;
-}
-.links li {
-    list-style-type: none;
-    cursor: pointer;
-    border-right: 2px solid #c68e8b;
-    padding: 0 1rem;
-}
-.links li:last-child{
-    border: none;
+    transform: scale(1.05);
 }
 
 footer {
@@ -151,6 +117,84 @@ footer {
 .autora{
     margin-top: 20px;
 }
+
+/* Parte de projetos */
+
+div.projetos{
+    padding: 40px 4%;
+}
+h2.meus-projetos{
+    color: #436850;
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2.meus-projetos span{
+    color: #12372A;
+}
+
+div.projetos-box{
+    color: #436850;
+    padding: 40px;
+}
+
+/* Parte de contato */
+
+.contato{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    color: #aa6462;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+
+form label, input, textarea, button {
+    display: block;
+    width: 100%;
+}
+form label {
+    color: #aa6462;
+    margin-bottom: 0.5;
+}
+form input, textarea{
+    font: inherit;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+}
+form textarea{
+    min-height: 8rem;
+    resize: vertical;
+}
+form button{
+    display: block;
+    padding: 1rem;
+    background: #aa6462;
+    color: #B2A59B;
+    font-size: 1.125rem;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: 1px solid #c68e8b;
+    cursor: pointer;
+}
+/* button:hover{
+    background-color: #ffe2dc;
+    color: #aa6462;
+} */
 
 /* Responsivo footer */
 @media (max-width: 640px){
