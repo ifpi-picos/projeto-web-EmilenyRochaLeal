@@ -81,7 +81,7 @@ div .name-paragrafo{
     margin-bottom: 2.5rem;
 
 }
-.bnt-contato{
+.bnt{
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 2px;
@@ -94,7 +94,7 @@ div .name-paragrafo{
     background-color: #12372A;
     
 }
-.bnt-contato:hover{
+.bnt:hover{
     transform: scale(1.05);
 }
 
@@ -121,7 +121,13 @@ footer {
 /* Parte de projetos */
 
 div.projetos{
-    padding: 40px 4%;
+    margin: 55px;
+}
+
+div.box{
+    display: flex;
+    gap: 1.5rem;
+    margin: 2.5rem ;
 }
 h2.meus-projetos{
     color: #436850;
@@ -133,8 +139,19 @@ h2.meus-projetos span{
 }
 
 div.projetos-box{
-    color: #436850;
-    padding: 40px;
+    color: #12372A;
+    padding: 40px ;
+    border: 2px solid #ADBC9F;
+    border-radius: 20px;
+}
+
+div.projetos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px;
+}
+
+div.projetos-box h3{
+    font-size: 1.7rem;
 }
 
 /* Parte de contato */
@@ -146,11 +163,11 @@ div.projetos-box{
     justify-content: center;
     flex-direction: column;
     font-family: sans-serif;
+    color: #12372A;
 }
 
 h1{
     font-size: 3rem;
-    color: #aa6462;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -166,7 +183,6 @@ form label, input, textarea, button {
     width: 100%;
 }
 form label {
-    color: #aa6462;
     margin-bottom: 0.5;
 }
 form input, textarea{
@@ -180,21 +196,7 @@ form textarea{
     min-height: 8rem;
     resize: vertical;
 }
-form button{
-    display: block;
-    padding: 1rem;
-    background: #aa6462;
-    color: #B2A59B;
-    font-size: 1.125rem;
-    font-family: sans-serif;
-    border-radius: 5px;
-    border: 1px solid #c68e8b;
-    cursor: pointer;
-}
-/* button:hover{
-    background-color: #ffe2dc;
-    color: #aa6462;
-} */
+
 
 /* Responsivo footer */
 @media (max-width: 640px){
