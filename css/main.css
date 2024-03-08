@@ -51,6 +51,10 @@ a{
 .menu li:last-child{
     border: none;
 }
+.conteiner{
+    width: 80vw;
+    margin: 0 auto;
+}
 .principal {
     display: flex;
     justify-content: center;
@@ -79,23 +83,19 @@ div .name-paragrafo{
     line-height: 1.5rem;
     color: var(--text-light);
     margin-bottom: 2.5rem;
+    font-weight: 600;
 
 }
-.bnt{
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 1rem 2rem ;
-    outline: none;
-    border: 2px solid #12372A;
-    border-radius: 30px;
-    cursor: pointer;
-    color: #FBFADA;
-    background-color: #12372A;
-    
+
+.entre-contato{
+    margin-bottom: 3rem;
 }
-.bnt:hover{
-    transform: scale(1.05);
+
+.entre-contato a{
+    margin: 0 0.7rem 0 0;
+}
+.entre-contato img{
+    width: 1.3rem;
 }
 
 footer {
@@ -117,10 +117,27 @@ footer {
 .autora{
     margin-top: 20px;
 }
+/* Parte de Habilidades */
+
+div.conteiner-icon{
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+    gap: 5rem;
+    flex-direction: row;
+}
+.box-icon p{
+    color: #12372A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 0 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
 
 /* Parte de projetos */
 
 div.projetos{
+    flex-grow: 1;
     margin: 55px;
 }
 
@@ -154,6 +171,8 @@ div.projetos-box h3{
     font-size: 1.7rem;
 }
 
+
+
 /* Parte de contato */
 
 .contato{
@@ -166,6 +185,22 @@ div.projetos-box h3{
     color: #12372A;
 }
 
+.bnt{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem ;
+    outline: none;
+    border: 2px solid #12372A;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #FBFADA;
+    background-color: #12372A;
+    
+}
+.bnt:hover{
+    transform: scale(1.05);
+}
 h1{
     font-size: 3rem;
     margin-bottom: 2rem;

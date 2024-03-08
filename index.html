@@ -7,46 +7,89 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
+    <header class="conteiner">
         <div class="logo">Emileny Leal<span class="est-front">Estudante Front-end</span></div>
         <div class="menu">
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#minhas-habilidades">Habilidades</a></li>
+                <li><a href="#meus-projetos">Projetos</a></li>
+                <li><a href="#fale-comigo">Contato</a></li>
             </ul>
         </div>
     </header>
-    <main> 
+    <main class="conteiner"> 
         <div class="principal">
             <div class="imagem">
-                <img src="https://extra.globo.com/incoming/13989488-ca6-4e0/w448/cachorro-selfie-4.jpg" alt="foto da Emileny" />
+                <img src="imgs/person.jpg" alt="foto da Emileny" />
             </div>
             <div class="lateral-imagem"> 
-            <h1 class="name-ola">Olá!</h1>
-            <h4 class="name-titulo">Um pouco sobre mim </h4>
-            <p class="name-paragrafo">um pouco sobre mim</p>
-            <div class="butoes">
-                <a href="#fale-comigo"><button class="bnt"> Entre em contato</button></a>
+                <h2 class="name-ola">Olá!</h2>
+                <h3 class="name-titulo">Um pouco sobre mim </h3>
+                <p class="name-paragrafo"> Sou aluna do curso Anásile e Desemvolvimento de Sistemas. <br>Gosto de pensar que com compromisso, organização e calma posso cumprir os meus objetivos.<br> Por isso me considero uma constante aprendiz.
+                    Tenho como propósito seguir e prosseguir conhecendo, por meio da prática, novas tecnologias para meu desenvolvimento profissional e pessoal.</p>
+                
+                    <div class="entre-contato">
+                        <a href="https://www.linkedin.com/in/emileny-r-255b56202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="imgs/linkedin.png" alt="link para a rede social likendin"/></a>
+                        <a href="https://www.instagram.com/emilenyleal?igsh=amcyMWhzODNzYzQy"><img src="imgs/instagram.png" alt="link para a rede social Instragram"/></a>
+                        <a href="https://github.com/EmilenyRochaLeal"><img src="imgs/github.png" alt="link do github para visualização de códigos"></a>
+                        <a href="mailto:emilenyleal20@gmail.com? subject=subject text"><img src="imgs/gmail.png" alt=""></a>
+                    </div>
+            </div>
+      </div>
+
+      <div class="habilidades" id="minhas-habilidades">
+        <h2 class="meus-projetos">Minhas Habilidades</h2>
+        <div class="conteiner-icon">
+            <div class="box-icon">
+                <img src="imgs/html-5.png">
+                <p>Html</p>
+            </div>
+            <div class="box-icon">
+                <img src="imgs/css-3 (1).png">
+                <p>Css</p>
+            </div>
+            <div class="box-icon">
+                <img src="imgs/js.png">
+                <p>JavaScript</p>
+            </div>
+            <div class="box-icon">
+                <img src="imgs/pitao.png">
+                <p>Python</p>
+            </div>
+            <div class="box-icon">
+                <img src="imgs/java.png"> 
+                <p>Java</p>
+            </div>
+            <div class="box-icon">
+                <img src="imgs/postgre.png">
+                <p>Postgres</p>
+            </div>
+            <div class="box-icon">
+                <img src="imgs/giticon.png">
+                <p>Git</p>
             </div>
         </div>
       </div>
 
-      <div class="projetos"> 
+      <div class="projetos" id="meus-projetos"> 
         <h2 class="meus-projetos">Meus <sapn>Projetos.</sapn></h2>
         <div class="box">
             <div class="projetos-box">
+                <!-- <img src="imgs/meu-qrcode.png"> -->
                 <h3>Qrcode</h3>
-                <p>Página que gera qrcode a partir de uma URL (Uniform Resource Locator).</p>
+                <p>Página que gera qrcode a partir de uma URL (Uniform Resource Locator).</p><br>
+                <a href="https://emilenyrochaleal.github.io/GeradorDeQRcode/"><button class="bnt">Visite web</button></a>
             </div>
             <div class="projetos-box">
-                <h3>Calculadora fisica</h3>
-                <p>Página que gera qrcode a partir de uma URL (Uniform Resource Locator).</p>
+                <h3>Calculadora de Campo Elétrico</h3>
+                <p>Página que calcula o campo elétrico gerado por duas partículas</p><br>
+                <a href="https://174c7573-1103-4317-ad34-6e2d0671ee40-00-7opcwyb6qdo0.kirk.replit.dev/"><button class="bnt">Visite Web</button></a>
             </div>
             <div class="projetos-box">
                 <h3>Gerador de finanças</h3>
-                <p>Página que gera qrcode a partir de uma URL (Uniform Resource Locator).</p>
+                <p>Financia Fácil é uma página para gerenciar ganhos e gastos</p><br>
+                <a href="https://kednaleal.github.io/projeto-geradordefinancas-financiafacil/principal.html"><button class="bnt">Visite web</button></a>
             </div>
         </div>
       </div>
@@ -71,7 +114,7 @@
         </form>
       </div>
     </main>
-    <footer>
+    <footer class="conteiner">
         <div class="footer-comp">
         <div class="telefone">
             <h3>Telefone</h3>
@@ -83,12 +126,14 @@
         </div>
         <div class="rede-social">
             <h3>Me siga</h3>
-            <a href="https://www.linkedin.com/in/emileny-r-255b56202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="imgs/linkedin.png" alt="link para a rede social likendin"/></a>
-            <a href="https://www.instagram.com/emilenyleal?igsh=amcyMWhzODNzYzQy"><img src="imgs/instagram.png" alt="link para a rede social Instragram"/></a>
-            <a href="https://github.com/EmilenyRochaLeal"><img src="imgs/github.png" alt="link do github para visualização de códigos"></a>
+            <div>
+                <a href="https://www.linkedin.com/in/emileny-r-255b56202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="imgs/linkedin.png" alt="link para a rede social likendin"/></a>
+                <a href="https://www.instagram.com/emilenyleal?igsh=amcyMWhzODNzYzQy"><img src="imgs/instagram.png" alt="link para a rede social Instragram"/></a>
+                <a href="https://github.com/EmilenyRochaLeal"><img src="imgs/github.png" alt="link do github para visualização de códigos"></a>
+            </div>
         </div>
         <div class="autora">
-            <p> &copy; 2024 Por Emileny Leal.</p>
+            <p> &copy; 2024 por Emileny Leal.</p>
         </div>
     </div>
     </footer>
