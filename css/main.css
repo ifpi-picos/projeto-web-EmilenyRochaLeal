@@ -9,8 +9,12 @@ body{
     justify-content: space-between;
     background-color: #FBFADA;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+}
 header .logo {
-    font-size: 2.1rem;
+    display: flex;
     font-weight: 600;
     color: #436850;
     padding: 25px;
@@ -22,33 +26,26 @@ header .logo {
 header .est-front{
     font-size: 12px;
     padding-left: 10px;
+    padding-top: 10px;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-}
-.header, p, ul{
+.header , p, ul{
     padding-right:  20px;
     padding-top: 25px;
-}
-header h1 {
-    padding-left: 5px;
-    padding-top: 5px;
 }
 a{
     text-decoration: none;
 }
-.menu ul {
+nav ul {
     display: flex;
 }
-.menu li {
+nav li {
     list-style-type: none;
     cursor: pointer;
     border-right: 2px solid #12372A;
     padding: 0 1rem;
 }
-.menu li:last-child{
+nav li:last-child{
     border: none;
 }
 .conteiner{
@@ -56,6 +53,7 @@ a{
     margin: 0 auto;
 }
 .principal {
+    /* min-height: 90vh; */
     display: flex;
     justify-content: center;
     gap: 3.4rem;
@@ -70,6 +68,11 @@ div .imagem img{
     max-width: 300px;
     border: 5px solid #ADBC9F;
 }
+/* div.lateral-imagem{
+    padding: 55px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+} */
 div .name-ola{
     font-size: 6rem;
     color: #436850;
@@ -97,27 +100,10 @@ div .name-paragrafo{
 .entre-contato img{
     width: 1.3rem;
 }
-
-footer {
-    display: flex;
-    padding: 20px;
-}
-.footer-comp{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 50px;
-    border-top: 2px solid #B2A59B ; 
-
-}
-.rede-social a, img{
-    padding: 2px;
-    margin-top: 10px;
-}
-.autora{
-    margin-top: 20px;
-}
 /* Parte de Habilidades */
+.habilidades{
+    height: 100vh;
+}
 
 div.conteiner-icon{
     display: flex;
@@ -135,16 +121,19 @@ div.conteiner-icon{
 }
 
 /* Parte de projetos */
-
-div.projetos{
-    flex-grow: 1;
-    margin: 55px;
+.projetos{
+    height: 100vh;
 }
 
 div.box{
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin: 2.5rem ;
+}
+div.box-icon{
+    display: inline-block;
+    flex-grow: 1;
 }
 h2.meus-projetos{
     color: #436850;
@@ -156,10 +145,10 @@ h2.meus-projetos span{
 }
 
 div.projetos-box{
-    color: #12372A;
     padding: 40px ;
     border: 2px solid #ADBC9F;
     border-radius: 20px;
+    flex-wrap: 1;
 }
 
 div.projetos-box:hover{
@@ -168,15 +157,25 @@ div.projetos-box:hover{
 }
 
 div.projetos-box h3{
+    color: #436850;
     font-size: 1.7rem;
 }
 
-
+.projetos-box a{
+    color: #12372A;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.box-icon{
+    width: 50px;
+    height: 150px;
+    flex-wrap: 1;
+}
 
 /* Parte de contato */
 
 .contato{
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,11 +231,55 @@ form textarea{
     resize: vertical;
 }
 
+/* Rodapé */
+footer {
+    display: flex;
+    padding: 20px;
+}
+.footer-comp{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 50px;
+    border-top: 2px solid #B2A59B ; 
 
+}
+.rede-social a, img{
+    padding: 2px;
+    margin-top: 10px;
+}
+.autora{
+    margin-top: 20px;
+}
 /* Responsivo footer */
-@media (max-width: 640px){
-    footer{
+@media screen and (max-width: 965px){
+    .principal{
         flex-direction: column;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .logo{
+        font-size: 24px;
+        flex-direction: column;
+    }
+    div.conteiner-icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    div.box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-comp{
+        flex-direction: column;
+    }
+    .footer-comp p{
+        padding: 0;
+        margin-bottom: 10px;
     }
 
 }
