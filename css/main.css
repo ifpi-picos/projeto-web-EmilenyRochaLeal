@@ -9,6 +9,7 @@ body{
     justify-content: space-between;
     background-color: #FBFADA;
 }
+/* Cabeçalho  */
 header{
     display: flex;
     justify-content: space-between;
@@ -36,24 +37,71 @@ header .est-front{
 a{
     text-decoration: none;
 }
-nav ul {
+nav.menu ul {
     display: flex;
 }
-nav li {
-    list-style-type: none;
+nav.menu li {
     cursor: pointer;
     border-right: 2px solid #12372A;
     padding: 0 1rem;
 }
-nav li:last-child{
+nav li{
+    list-style-type: none;
+}
+nav.menu li:last-child{
     border: none;
 }
+
+/* Menu mobile */
+
+.list-abrir-menu{
+    color: #436850;
+    padding-top: 25px;
+    cursor: pointer;
+
+}
+
+.menu-mobile{
+    background-color: #12372A;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu-mobile.abrir-menu{
+    width: 40%;
+}
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #FBFADA;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: block;
+}
+.menu-mobile li:hover{
+    background-color: #436850;
+}
+.menu-mobile .custom-icon {
+    color: #FBFADA;
+    width: 30px;
+    height: 30px;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+    cursor: pointer;
+}
+/*  Main*/
 .conteiner{
     width: 80vw;
     margin: 0 auto;
 }
 .principal {
-    /* min-height: 90vh; */
     display: flex;
     justify-content: center;
     gap: 3.4rem;
@@ -68,11 +116,11 @@ div .imagem img{
     max-width: 300px;
     border: 5px solid #ADBC9F;
 }
-/* div.lateral-imagem{
+div.lateral-imagem{
     padding: 55px;
     padding-left: 55px;
     padding-bottom: 55px;
-} */
+}
 div .name-ola{
     font-size: 6rem;
     color: #436850;
@@ -87,7 +135,6 @@ div .name-paragrafo{
     color: var(--text-light);
     margin-bottom: 2.5rem;
     font-weight: 600;
-
 }
 
 .entre-contato{
@@ -97,58 +144,46 @@ div .name-paragrafo{
 .entre-contato a{
     margin: 0 0.7rem 0 0;
 }
-.entre-contato img{
-    width: 1.3rem;
-}
+
 /* Parte de Habilidades */
 .habilidades{
-    height: 100vh;
+    height: 85vh;
 }
 
 div.conteiner-icon{
-    display: flex;
-    align-items: center;
-    margin: 3rem;
-    gap: 5rem;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 100px 100px 100px ;
+    justify-content: space-around;
+    padding: 30px;
+}
+.box-icon{
+    width: 50px;
+    height: 150px;
 }
 .box-icon p{
     color: #12372A;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px 0 50px;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
 /* Parte de projetos */
-.projetos{
-    height: 100vh;
-}
-
-div.box{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin: 2.5rem ;
-}
-div.box-icon{
-    display: inline-block;
-    flex-grow: 1;
-}
 h2.meus-projetos{
     color: #436850;
     font-size: 2.5rem;
     text-align: center;
 }
-h2.meus-projetos span{
-    color: #12372A;
+
+div.box{
+    display: flex;
+    gap: 1.5rem;
+    margin: 2.5rem ;
 }
 
 div.projetos-box{
     padding: 40px ;
     border: 2px solid #ADBC9F;
     border-radius: 20px;
-    flex-wrap: 1;
 }
 
 div.projetos-box:hover{
@@ -165,11 +200,6 @@ div.projetos-box h3{
     color: #12372A;
     font-size: 1.3rem;
     font-weight: 600;
-}
-.box-icon{
-    width: 50px;
-    height: 150px;
-    flex-wrap: 1;
 }
 
 /* Parte de contato */
@@ -200,7 +230,7 @@ div.projetos-box h3{
 .bnt:hover{
     transform: scale(1.05);
 }
-h1{
+.form-titulo{
     font-size: 3rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -265,14 +295,16 @@ footer {
         font-size: 24px;
         flex-direction: column;
     }
-    div.conteiner-icon{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+    div.lateral-imagem{
+        padding: 0px;
+        padding-left: 0px;
     }
     div.box{
         flex-direction: column;
-        align-items: center;
+    }
+    .projetos-box{
+        width: 80%;
+        height: 80%;
     }
     .footer-comp{
         flex-direction: column;

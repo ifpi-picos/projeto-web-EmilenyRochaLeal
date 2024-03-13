@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="Emileny Leal é uma página de apresentação pessoal">
+    <title>Emileny Leal</title>
+    <link rel="stylesheet" href="css/main.css"  media="screen" aria-disabled="true">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="conteiner">
@@ -17,6 +19,27 @@
                     <li><a href="#fale-comigo">Contato</a></li>
                 </ul>
             </nav>
+            <div class="list-abrir-menu" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </div>
+            <div class="menu-mobile">
+                <div class="btn-fechar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg custom-icon" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg>
+
+                      <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="#minhas-habilidades">Habilidades</a></li>
+                            <li><a href="#meus-projetos">Projetos</a></li>
+                            <li><a href="#fale-comigo">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
     </header>
     <main class="conteiner"> 
         <div class="principal">
@@ -73,7 +96,7 @@
       </div>
 
       <div class="projetos" id="meus-projetos"> 
-        <h2 class="meus-projetos">Meus <sapn>Projetos.</sapn></h2>
+        <h2 class="meus-projetos">Meus Projetos.</h2>
         <div class="box">
             <div class="projetos-box">
                 <h3>Qrcode</h3>
@@ -95,7 +118,9 @@
 
       <div class="contato" id="fale-comigo">
         <div> 
-            <h1><span>Fale Comigo</span></h1>
+            <h3>
+           <span class="form-titulo">Fale Comigo</span> 
+        </h3>
     </div>
     <form action="https://formsubmit.co/capic.2023118tads0008@aluno.ifpi.edu.br"
           method="post" 
