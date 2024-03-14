@@ -51,16 +51,17 @@ nav li{
 nav.menu li:last-child{
     border: none;
 }
-
+nav.menu a{
+    color: #436850;
+    font-weight: bold;
+}
 /* Menu mobile */
 
 .list-abrir-menu{
     color: #436850;
     padding-top: 25px;
     cursor: pointer;
-
 }
-
 .menu-mobile{
     background-color: #12372A;
     height: 100vh;
@@ -96,6 +97,18 @@ nav.menu li:last-child{
     padding: 20px 5%;
     cursor: pointer;
 }
+
+/* Mostrar div apenas desktop */
+.list-abrir-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 965px) {
+    .list-abrir-menu {
+        display: block;
+    }
+}
+
 /*  Main*/
 .conteiner{
     width: 80vw;

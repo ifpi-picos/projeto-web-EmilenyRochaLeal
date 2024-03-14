@@ -6,15 +6,14 @@
     <meta name="description" content="Emileny Leal é uma página de apresentação pessoal">
     <title>Emileny Leal</title>
     <link rel="stylesheet" href="css/main.css"  media="screen" aria-disabled="true">
-    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="conteiner">
         <div class="logo"><h2 class="h2-logo">Emileny Leal</h2><span class="est-front">Estudante Front-end</span></div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#minhas-habilidades">Habilidades</a></li>
+        <nav class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#minhas-habilidades">Habilidades</a></li>
                     <li><a href="#meus-projetos">Projetos</a></li>
                     <li><a href="#fale-comigo">Contato</a></li>
                 </ul>
@@ -23,9 +22,9 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                   </svg>
-            </div>
-            <div class="menu-mobile">
-                <div class="btn-fechar">
+                </div>
+                <div class="menu-mobile">
+                    <div class="btn-fechar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg custom-icon" viewBox="0 0 16 16">
                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
                       </svg>
@@ -44,7 +43,7 @@
     <main class="conteiner"> 
         <div class="principal">
             <div class="imagem">
-                <img src="imgs/person.jpg" alt="foto da Emileny" />
+                <img src="imgs/person.jpg" alt="foto da Emileny" loading="lazy" />
             </div>
             <div class="lateral-imagem"> 
                 <h2 class="name-ola">Olá!</h2>
@@ -59,10 +58,10 @@
                         <a href="mailto:emilenyleal20@gmail.com? subject=subject text"><img src="imgs/gmail.png" alt="link para enviar um email"></a>
                     </div>
             </div>
-      </div>
+        </div>
 
       <div class="habilidades" id="minhas-habilidades">
-        <h2 class="meus-projetos">Minhas Habilidades</h2>
+          <h2 class="meus-projetos">Minhas Habilidades</h2>
         <div class="conteiner-icon">
             <div class="box-icon">
                 <img src="imgs/html-5.png" alt="Representação html (liguagem de marcação de hipertexto)">
@@ -96,11 +95,11 @@
       </div>
 
       <div class="projetos" id="meus-projetos"> 
-        <h2 class="meus-projetos">Meus Projetos.</h2>
-        <div class="box">
-            <div class="projetos-box">
-                <h3>Qrcode</h3>
-                <p>Página que gera qrcode a partir de uma URL (Uniform Resource Locator).</p><br>
+          <h2 class="meus-projetos">Meus Projetos.</h2>
+          <div class="box">
+              <div class="projetos-box">
+                  <h3>Qrcode</h3>
+                  <p>Página que gera qrcode a partir de uma URL (Uniform Resource Locator).</p><br>
                 <a href="https://emilenyrochaleal.github.io/GeradorDeQRcode/">Visualizar projeto</a>
             </div>
             <div class="projetos-box">
@@ -115,13 +114,13 @@
             </div>
         </div>
       </div>
-
+      
       <div class="contato" id="fale-comigo">
-        <div> 
-            <h3>
-           <span class="form-titulo">Fale Comigo</span> 
-        </h3>
-    </div>
+          <div> 
+              <h3>
+                  <span class="form-titulo">Fale Comigo</span> 
+                </h3>
+            </div>
     <form action="https://formsubmit.co/capic.2023118tads0008@aluno.ifpi.edu.br"
           method="post" 
           class="form">
@@ -134,7 +133,7 @@
           <label for="msm">Mensagem</label>
           <textarea name="msm" required id="msm"></textarea>
           <button type="submit" id="bnt-enviar" class="bnt">Enviar</button>
-    
+          
         </form>
       </div>
     </main>
@@ -161,5 +160,6 @@
         </div>
     </div>
     </footer>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
